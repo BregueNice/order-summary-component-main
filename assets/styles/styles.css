@@ -1,0 +1,133 @@
+:root{
+    --blue: hsl(225, 100%, 94%);
+    --blue2: hsl(245, 75%, 52%);
+    --light-blue: hsl(225, 100%, 98%);
+    --blue3: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+
+    --a:  hsl(228, 45%, 44%);
+    --font: 'Red Hat Display', sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: url('../images/pattern-background-desktop.svg') no-repeat;
+    background-size: contain;
+    background-color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font);
+}
+
+.container{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 15px;
+    width: auto;
+    max-width: 400px;
+    box-shadow: 0px 20px 25px 15px rgba(0, 0, 0, 0.05),
+        0 40px 30px 15px rgba(0, 0, 0, 0.01);
+    gap: 20px;
+}
+
+.image img{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: auto;
+    max-width: 400px;
+}
+
+.container-text{
+    padding-inline: 50px;
+    padding-bottom: 10px;
+}
+
+h1{
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+.primary-text{
+    color: var(--blue3);
+    font-weight: 500;
+}
+
+.container-promo{
+    background-color: var(--light-blue);
+    width: 300px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.container-child{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 30px;
+    gap: 10px;
+}
+
+.container-promo-child{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding-inline: 5px;
+}
+
+.change-plan{
+    text-decoration: underline;
+    color: var(--blue2);
+    font-weight: 700;
+}
+
+.change-plan:hover{
+    text-decoration: none;
+    color: hsla(245, 75%, 52%, 0.411);
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.button-payment{
+    background-color: var(--blue2);
+    width: 300px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 900;
+    box-shadow: 0px 20px 25px 15px hsla(245, 75%, 52%, 0.13);
+}
+
+.button-payment:hover{
+    background-color: hsla(245, 75%, 52%, 0.411);
+}
+
+.button-cancel{
+    color: var(--blue3);
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.button-cancel:hover{
+    color: var(--dark-blue);
+}
+
+.text-plan-value{
+    color: var(--blue3);
+}
